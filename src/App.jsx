@@ -3,17 +3,6 @@ import { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createPortal } from 'react-dom';
 
-// Bài tập: tạo một form dưới dạng một React functional component dùng để đăng 
-// ký user cho một ứng dụng mới.
-// Yêu cầu 1: các thông tin trong form bao gồm: username, email, 
-// password, confirm password, avatar, country, terms agreement (chỉ cần một checkbox).
-// Yêu cầu 2: khi bấm submit thì form phải kiểm tra dữ liệu nhập 
-// vào có hợp lệ không, nếu hợp lệ thì alert ra "Đăng ký thành công".
-//            Nếu không hợp lệ thì phải hiển thị ra lỗi.
-// Kiểm tra tính hợp lệ của dữ liệu như sau:
-//     1. Username không được chứa dấu cách.
-//     2. Password phải dài ít nhất 8 ký tự và phải bao gồm: chữ in hoa, chữ thường,
-//  ký tự đặc biệt (@, #, !...)
 
 function App() {
   return (
@@ -34,7 +23,7 @@ function MyForm(){
    avatar:"",
   });
 
-  
+
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -45,7 +34,7 @@ function MyForm(){
     }));
   };
 
-  
+
   function handleSubmit(e) {
     e.preventDefault();
     if (inputs.password !== inputs.confirmPassword) {
@@ -57,7 +46,7 @@ function MyForm(){
 
   alert("Form submitted!");
 };
-  
+
 
 
   return(
@@ -65,7 +54,7 @@ function MyForm(){
 
       <h1>Welcome!</h1>
       <h4>Username:</h4>
-      <label> 
+      <label>
         <input
           type="text"
           name="username"
@@ -77,7 +66,7 @@ function MyForm(){
       </label>
 
       <h4>Email:</h4>
-      <label> 
+      <label>
         <input
           type="email"
           name="email"
@@ -95,12 +84,12 @@ function MyForm(){
             value={inputs.country}
             onChange={handleChange}
             required
-            
+
           />
       </label>
 
       <h4>Password:</h4>
-      <label> 
+      <label>
         <input
           type="password"
           name="password"
@@ -112,7 +101,7 @@ function MyForm(){
       </label>
 
       <h4>Confirm Password:</h4>
-      <label> 
+      <label>
         <input
           type="password"
           name="confirmPassword"
@@ -131,7 +120,7 @@ function MyForm(){
           width: "20px",
           boxSizing: "none",
         }}
-        
+
           type="checkbox"
         />
       </label>
