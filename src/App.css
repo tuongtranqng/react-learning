@@ -55,6 +55,7 @@ li {
   gap: 8px;
   width: 100%;
   max-width: 800px; /* optional */
+   box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
 }
 
 .container{
