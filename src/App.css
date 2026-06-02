@@ -1,9 +1,10 @@
 table {
   width: 70%;
   table-layout: auto;
-  border-collapse: collapse;
- 
+  border-collapse: separate;
+  border-spacing: 0;
   margin: auto;
+  
 }
 
 th, td {
@@ -44,6 +45,74 @@ h1 {
   margin-left: 50px;
 }
 
+.taskName{
+  font-size: 23px;
+  font-weight: 600;
+  color: #b1b7c2;
+}
+
 .div {
   margin: center;
 }
+
+li {
+  border: 2px solid rgb(41, 39, 39);
+  border-radius: 20px;
+  max-width: 60%;
+  margin-right: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containder div{
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;  
+  font-size: 30px;
+}
+
+button {
+  padding: 10px;
+  margin-left: 45px;
+  
+}
+
+li input {
+  width: 100%;
+  padding: 20px;
+
+  background-color: #16171d;
+  color: white;
+
+  border: 0.5px solid rgb(41, 39, 39);
+  border-radius: 20px;
+
+  outline: none;
+  box-shadow: none;
+
+  font-size: 20px;
+
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid rgb(41, 39, 39);
+}
+

@@ -5,27 +5,94 @@ import { createPortal } from 'react-dom';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function Home() {
-  return <h1>Trang Chủ</h1>;
+  return(
+    <>
+      <h1>Trang Chủ</h1>
+      <ul style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px"
+        }}>
+          <li className="container">
+            <div>
+                <p>Home Work</p>
+                <p>make a TakeList in Jsx</p>
+              </div>
+              <div>
+                <p>Thursday, 02.06.2026</p>
+                <p>10.00 A.M</p>
+              </div>
+          </li>
+          <li className="container">
+            <div>
+                <p>Home Work</p>
+                <p>make a TakeList in Jsx</p>
+              </div>
+              <div>
+                <p>Thursday, 02.06.2026</p>
+                <p>10.00 A.M</p>
+              </div>
+          </li>
+          <li className="container">
+            <div>
+                <p>Home Work</p>
+                <p>make a TakeList in Jsx</p>
+              </div>
+              <div>
+                <p>Thursday, 02.06.2026</p>
+                <p>10.00 A.M</p>
+              </div>
+          </li>
+          <li className="container">
+            <div>
+                <p>Home Work</p>
+                <p>make a TakeList in Jsx</p>
+              </div>
+              <div>
+                <p>Thursday, 02.06.2026</p>
+                <p>10.00 A.M</p>
+              </div>
+          </li>
+          <li className="container">
+            <div>
+                <p>Home Work</p>
+                <p>make a TakeList in Jsx</p>
+              </div>
+              <div>
+                <p>Thursday, 02.06.2026</p>
+                <p>10.00 A.M</p>
+              </div>
+          </li>
+      </ul>
+    </>
+    );
 }
 
 function TaskList({ setIsOpen }) {
+  const [task,setTask] = useState({
+    name: "Task"
+  })
   return (
     
     <div>
       <h1>Danh Sách Tác Vụ</h1>
 
       <ul>
-        <li>task</li>
-        <li>task</li>
-        <li>task</li>
-        <li>task</li>
-
         <li>
-          <button onClick={() => setIsOpen(true)}>
+          <input
+            type="text"
+            value={task.name}
+            onChange={(e)=>setTask({...task,name: e.target.value})}
+          />
+        </li>
+
+        <li><pre>  task</pre></li>
+        <li><pre>  task</pre></li>
+        <li><pre>  task</pre></li>
+      </ul>
+      <button onClick={() => setIsOpen(true)}>
             Add Task
           </button>
-        </li>
-      </ul>
     </div>
   );
 }
