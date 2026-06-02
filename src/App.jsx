@@ -7,22 +7,16 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 function Home() {
   return(
     <>
-      <h1>Trang Chủ</h1>
-      <ul style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "10px"
+      <h1>Trang Chủ</h1> 
+      <ul
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "10px",
+          padding: 0,
+          margin: 0,
+          listStyle: "none"
         }}>
-          <li className="container">
-            <div>
-                <p>Home Work</p>
-                <p>make a TakeList in Jsx</p>
-              </div>
-              <div>
-                <p>Thursday, 02.06.2026</p>
-                <p>10.00 A.M</p>
-              </div>
-          </li>
           <li className="container">
             <div>
                 <p>Home Work</p>
@@ -171,22 +165,26 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <nav className="navbar">
-          <Link to="/">Home</Link> |{" "}
-          <Link to="/TaskList">Task List</Link> |{" "}
-          <Link to="/TaskDetail">Task Detail</Link>
-        </nav>
+        <div className="app">
+          <nav className="sidebar">
+            <Link to="/">Home</Link>
+            <Link to="/TaskList">Task List</Link>
+            <Link to="/TaskDetail">Task Detail</Link>
+          </nav>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
+          <main className="content">
+            <Routes>
+              <Route path="/" element={<Home />} />
 
-          <Route
-            path="/TaskList"
-            element={<TaskList setIsOpen={setIsOpen} />}
-          />
+              <Route
+                path="/TaskList"
+                element={<TaskList setIsOpen={setIsOpen} />}
+              />
 
-          <Route path="/TaskDetail" element={<TaskDetail />} />
-        </Routes>
+              <Route path="/TaskDetail" element={<TaskDetail />} />
+            </Routes>
+          </main>
+        </div>
       </BrowserRouter>
 
       <Modal
