@@ -1,19 +1,37 @@
 table {
-  width: 70%;
+  width: 90%;
   table-layout: auto;
-  border-collapse: separate;
-  border-spacing: 0;
+
   margin: auto;
   
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+
 }
+
+
+
 
 th, td {
-  border: 2px solid white;
-  
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.50); /* line ngang */
   padding: 10px;
-  text-align: center;
+  
 }
 
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#04AA6D;
+  color: white;
+}
+tr:last-child td {
+  border-bottom: none; /* bỏ line cuối */
+}
 
 .logo {
   color: white;
