@@ -1,3 +1,5 @@
+
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 function TaskList() {
   
   return (
@@ -16,7 +18,7 @@ function TaskList() {
             <tr>
               <td>Sumbit Homework</td>
               <td>Thursday, 02.06.2026</td>
-              <td>Detail</td>
+              <td><Link to="/Taskdetail">detail</Link></td>
             </tr>
             <tr>
               <td>Sumbit Homework</td>
@@ -38,6 +40,12 @@ function TaskList() {
       </div>
     </>
   );
+}
+
+function TaskDetail(){
+  return(
+    <p>there's nothing here</p>
+  )
 }
 
 export default TaskList;
