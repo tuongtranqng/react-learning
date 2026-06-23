@@ -8,4 +8,4 @@ Một bài báo sẽ có các thông tin sau:
 - Phân loại (ví dụ: chính trị, tài chính, làm đẹp,...).
 - Nội dung bài viết: để giới hạn độ khó cho bài tập này, nội dung bài báo chỉ chứa văn bản, không chứa hình ảnh hay các nội dung đa phương tiện khác.
 Tham khảo https://vnexpress.net/
-- Gợi ý: tạo một component để render một bài báo, bài báo được lưu dưới dạng JSON, tạo file article.js để lưu một số bài báo để chạy demo.
+- Gợi ý: tạo một component để render một bài báo, bài báo được lưu dưới dạng JSON, tạo file articles.js để lưu một số bài báo để chạy demo.
