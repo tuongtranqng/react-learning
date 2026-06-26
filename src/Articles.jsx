@@ -15,13 +15,12 @@ export function ArticleDetail() {
 
 function ArticlesSummary(props){
   return(
-    <ul className="container">
-      <li key={props.id}>
+    <>
         <h1>{props.header}</h1>
         <small>{props.date}</small>
         <p>{props.content}</p>
-      </li>
-     </ul>
+    </>
+
   )
 }
 
