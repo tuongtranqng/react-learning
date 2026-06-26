@@ -15,3 +15,6 @@ Yêu cầu tương tự bài 1 nhưng nội dung bài viết được rút gọn
 
 ## Bài 3: tạo trang Home
 Ở trang chủ Home sẽ hiển thị danh sách các bài báo theo trình tự mới nhất trên đầu. Sử dụng component đã tạo ở bài 2.
+
+## Bài 4: tạo trang hiển thị bài báo chi tiết và link từ trang Home
+Tạo link từ trang Home để khi bấm vào một bài báo thì sẽ mở trang chi tiết của bài báo đó (gợi ý: sử dụng router).
